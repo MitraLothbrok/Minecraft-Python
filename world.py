@@ -46,3 +46,17 @@ class Flower:
 
     def grow(self):
         mc.setBlocks(self.x, self.y, self.z, self.x, self.y+1, self.z, self.f, self.kind_f)
+
+
+class River:
+    def __init__(self, x, y, z):
+        self.x = x
+        self.y = y
+        self.z = z
+
+    def draw_river(self):
+        mc.setBlocks(self.x, self.y, self.z, self.x+2, self.y, self.z+2, 9)  # or 8
+
+
+
+
