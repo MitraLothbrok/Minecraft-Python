@@ -37,11 +37,12 @@ class Tree:
 
 
 class Flower:
-    def __init__(self, x, y, z, kind):
+    def __init__(self, x, y, z, f, kind_f):
         self.x = x
         self.y = y
         self.z = z
-        self.kind = kind
+        self.f = f
+        self.kind_f = kind_f
 
     def grow(self):
-        mc.setBlocks()
+        mc.setBlocks(self.x, self.y, self.z, self.x, self.y+1, self.z, self.f, self.kind_f)
