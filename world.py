@@ -56,7 +56,22 @@ class River:
 
     def draw_river(self):
         mc.setBlocks(self.x, self.y, self.z, self.x+2, self.y, self.z+2, 9)  # or 8
+        pass
 
+
+class GreenHouse:
+    def __init__(self, x, y, z, f, t_f,  m, t_m):
+        self.x = x
+        self.y = y
+        self.z = z
+        self.f = f
+        self.m = m
+        self.t_f = t_f
+        self.t_m = t_m
+
+    def brick_by_brick(self):
+        mc.setBlocks(self.x, self.y, self.z, self.x+10, self.y-2, self.z + 5, self.f, self.t_f)
+        mc.setBlocks(self.x, self.y+2, self.z, self.x+10, self.y+8, self.z+5, self.m, self.t_m)
 
 
 
