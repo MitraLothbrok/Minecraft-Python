@@ -70,8 +70,17 @@ class GreenHouse:
         self.t_m = t_m
 
     def brick_by_brick(self):
-        mc.setBlocks(self.x, self.y, self.z, self.x+10, self.y-2, self.z + 5, self.f, self.t_f)
-        mc.setBlocks(self.x, self.y+2, self.z, self.x+10, self.y+8, self.z+5, self.m, self.t_m)
+        mc.setBlocks(self.x, self.y-2, self.z, self.x+11, self.y, self.z + 7, self.f, self.t_f)
 
+        # mc.setBlocks(self.x, self.y+2, self.z, self.x+11, self.y+8, self.z+7, self.m, self.t_m)
 
+        '''
+        mc.setBlocks(self.x+1, self.y+1, self.z+1, self.x+5, self.y+7, self.z+1, 0)
+        mc.setBlocks(self.x+7, self.y+1, self.z+1, self.x+10, self.y+7, self.z+1, 0)
+        '''
+
+        mc.setBlocks(self.x, self.y, self.z, self.x, self.y+8, self.z, self.m, self.t_m)    # 1 corner
+        mc.setBlocks(self.x+11, self.y, self.z, self.x+11, self.y + 8, self.z, self.m, self.t_m)  # 2 corner
+        mc.setBlocks(self.x, self.y, self.z+7, self.x, self.y + 8, self.z+7, self.m, self.t_m)  # 3 corner
+        mc.setBlocks(self.x+11, self.y, self.z+7, self.x+11, self.y + 8, self.z+7, self.m, self.t_m)  # 4 corner
 
