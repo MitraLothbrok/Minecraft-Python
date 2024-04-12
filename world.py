@@ -1,7 +1,6 @@
 from mcpi.minecraft import Minecraft
 
 mc = Minecraft.create()
-
 class Tree:
 
     def __init__(self, x, y, z, w, l, kind_w, kind_l):
@@ -84,3 +83,12 @@ class GreenHouse:
         mc.setBlocks(self.x, self.y, self.z+7, self.x, self.y + 8, self.z+7, self.m, self.t_m)  # 3 corner
         mc.setBlocks(self.x+11, self.y, self.z+7, self.x+11, self.y + 8, self.z+7, self.m, self.t_m)  # 4 corner
 
+
+def main():
+    pass
+
+
+
+
+if __name__ == "__main__":
+    main()
