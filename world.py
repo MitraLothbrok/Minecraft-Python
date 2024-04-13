@@ -17,13 +17,13 @@ class Tree:
         mc.setBlocks(self.x, self.y, self.z, self.x + 1, self.y + 8, self.z + 1, self.w, self.kind_w)
 
         # leaves
-        mc.setBlocks(self.x-2, self.y + 3, self.z-2, self.x+2, self.y+4, self.z + 2, self.l, self.kind_l)
+        mc.setBlocks(self.x-2, self.y + 3, self.z-2, self.x+3, self.y+4, self.z + 3, self.l, self.kind_l)
         mc.setBlocks(self.x, self.y+3, self.z, self.x, self.y + 4, self.z, self.w, self.kind_w)
 
-        mc.setBlocks(self.x-2, self.y + 7, self.z - 2, self.x+2, self.y + 8, self.z+2, self.l, self.kind_l)
+        mc.setBlocks(self.x-2, self.y + 7, self.z - 2, self.x+3, self.y + 8, self.z+3, self.l, self.kind_l)
         mc.setBlocks(self.x, self.y + 7, self.z, self.x, self.y + 8, self.z, self.w, self.kind_w)
 
-        mc.setBlocks(self.x-1, self.y+9, self.z-1, self.x+1, self.y+9, self.z+1, self.l, self.kind_l)
+        mc.setBlocks(self.x-1, self.y+9, self.z-1, self.x+2, self.y+9, self.z+2, self.l, self.kind_l)
 
         mc.setBlocks(self.x, self.y+10, self.z, self.x, self.y+10, self.z, self.l, self.kind_l)
 
